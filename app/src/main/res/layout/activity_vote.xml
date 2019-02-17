@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:weightSum="1"
+    android:id="@+id/swipelayout"
+    android:fillViewport="false">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+        android:background="#000"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="82dp"
+            android:layout_height="94dp"
+            android:id="@+id/logo"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Profil"
+        android:id="@+id/profil"
+        android:textSize="15dp"
+        android:background="#ee252a"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/button_photos"
+        android:layout_alignStart="@+id/fond"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_gravity="right"
+            android:layout_marginRight="15dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Inscription"
+        android:id="@+id/inscription"
+        android:textColor="#ffffff"
+        android:background="#ee252a"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_below="@+id/button_photos"
+        android:layout_alignEnd="@+id/fond"
+        android:layout_marginTop="-33dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Photos"
+        android:id="@+id/photo"
+        android:textColor="#ffffff"
+        android:background="#ee252a"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/fond"
+        android:layout_marginTop="-31dp" />
+
+    <ImageView
+        android:layout_width="296dp"
+        android:layout_height="265dp"
+        android:id="@+id/image"
+        android:paddingTop="50dp"
+        android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/idphoto" />
+
+        <TextView
+        android:layout_width="400dp"
+        android:layout_height="73dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/titre"
+        android:textSize="20dp"
+        android:textColor="#ee252a"
+        android:layout_gravity="center_horizontal"
+        android:text="Titre"
+        android:layout_marginLeft="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+        android:layout_width="56dp"
+        android:layout_height="33dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Voter :"
+        android:id="@+id/textView9"
+        android:textSize="15dp"
+        android:textColor="#fff"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginTop="20dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="1.0"
+        android:layout_marginLeft="60dp"
+        android:progressTint="#FFFFF200" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Note :"
+            android:id="@+id/note"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="-15dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ecrit_comm"
+                android:drawableLeft="@drawable/comment"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Ecrivez votre commentaire"
+                android:backgroundTint="#ff0000"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="37dp"
+            android:text="Commenter"
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_commenter"
+            android:background="#ee252a"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Commentaires :"
+            android:id="@+id/textView8"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp" />
+
+
+
+        <ListView
+            android:layout_width="360dp"
+            android:id="@+id/liste"
+            android:layout_height="308dp"
+            android:backgroundTint="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:divider="@color/redBackground"
+            android:dividerHeight="1.0sp"
+            android:background="#ffffff">
+
+        </ListView>
+
+
+    </LinearLayout>
+    </ScrollView>

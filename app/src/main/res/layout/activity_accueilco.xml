@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:id="@+id/imageView5"
+        android:background="@drawable/logo"
+        android:layout_alignTop="@+id/fond"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/profil"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/fond"
+        android:background="#ee252a"
+        android:padding="10dp"
+        android:text="Profil"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Règlement"
+        android:id="@+id/reglement"
+        android:textSize="20dp"
+        android:background="#ee252a"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/button_photos"
+        android:layout_alignStart="@+id/fond"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="-7dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deconnexion"
+        android:id="@+id/deconnexion"
+        android:textColor="#ffffff"
+        android:background="#ee252a"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_alignBottom="@+id/button_inscription"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="-40dp" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:text="Photos"
+        android:id="@+id/photos"
+        android:textColor="#ffffff"
+        android:background="#ee252a"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/fond"
+        android:layout_gravity="right"
+        android:layout_marginTop="-140dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur notre site !"
+        android:id="@+id/textView23"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:textColor="#fff" />
+
+</LinearLayout>

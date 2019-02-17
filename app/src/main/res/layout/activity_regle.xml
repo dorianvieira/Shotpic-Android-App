@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:weightSum="1"
+    android:fillViewport="false">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:text="Conditions générales d&apos;utilisation de l&apos;application"
+                android:id="@+id/textView24"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="#ee252a" />
+
+            <TextView
+                android:layout_width="334dp"
+                android:layout_height="166dp"
+                android:text="Paris 8 en portraits&quot; est une exposition de photographie au sein de l&apos;Université de Saint Denis - Paris 8, organisée par trois étudiantes. Mais pour être réalisable nous avons besoin de vous, étudiants comme nous, de Saint-Denis ! En effet, le but est de créer une exposition autour du thème du portrait pour finalement faire le portrait de Paris 8. Nous organisons donc un concours photo. Pour y participer, rien de plus simple ."
+                android:id="@+id/textView25"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conditions pour l&apos;autorisation d&apos;exposition :"
+                android:id="@+id/textView26"
+                android:textColor="#ee252a"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="335dp"
+                android:layout_height="466dp"
+                android:text="Je consens à donner tous les droits à l’exposition « Paris 8 en portraits » que ce soit d’exposition ou de reproduction. J’accepte notamment que ma photographie soit exposée lors de l’exposition « Paris 8 en portraits » en janvier 2017 et qu’elle soit utilisée à des fins promotionnelles dans un territoire illimité.  J’autorise également l’université à conserver ces clichés dans la bibliothèque numérique ainsi qu’en format papier dans les archives de celle-ci.  Je consens aussi à ne percevoir aucune rémunération que ce soit en argent ou en nature et à n’engager aucune poursuite judiciaire. La présente autorisation est consentie sans limitation de durée. Ces dispositions sont portées à notre connaissance, dans le cadre de l’application de la législation relative au respect du droit à l’image et au respect de la vie privée.  En acceptant ledit contrat, je certifie que toute personne présente sur la photographie soit consentante et qu’elle accepte elle-aussi les termes du contrat."
+                android:id="@+id/textView27"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+</HorizontalScrollView>

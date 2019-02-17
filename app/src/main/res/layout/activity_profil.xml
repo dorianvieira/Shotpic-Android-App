@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/photoUpload"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/commentaires"
+            android:layout_alignStart="@+id/commentaires" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="130dp"
+            android:paddingTop="15dp"
+            android:text="Nom :"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="145dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:text="Prénom :"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/prenom"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="190dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView22"
+            android:paddingTop="10dp"
+            android:text="Pseudo :"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/pseudo"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="235dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <android.support.design.widget.TextInputLayout
+            android:drawableLeft="@drawable/user2"
+            android:layout_width="match_parent"
+            android:id="@+id/input_layout_email"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_modifMdp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:background="#ee252a"
+            android:layout_height="wrap_content"
+            android:textColor="#f0f0f0"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="31dp"
+            android:text="Modifier MDP" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ee252a"
+            android:text="Modifier l'email"
+            android:textAllCaps="false"
+            android:textColor="#f0f0f0"
+            android:textSize="18sp"
+            android:id="@+id/button_valider"
+            android:layout_below="@+id/email"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp" />
+
+        <Button
+            android:id="@+id/commentaires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes commentaires"
+            android:textColor="#f0f0f0"
+            android:background="#ee252a"
+            android:layout_alignTop="@+id/button_modifMdp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/votes"
+            android:background="#ee252a"
+            android:layout_width="wrap_content"
+            android:textColor="#f0f0f0"
+            android:layout_height="wrap_content"
+            android:text="Mes votes"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="432dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/mail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_below="@+id/textView28"
+            android:layout_alignParentStart="true"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Ma photo upload :"
+            android:id="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff"
+            android:layout_toStartOf="@+id/photoUpload"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</LinearLayout>
